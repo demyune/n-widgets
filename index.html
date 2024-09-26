@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A cat themed pomodoro timer with multiple themes. Pomodoro is a time management method used to break work into manageable chunks of time.">
+    <meta property="og:image" content="https://pomodorokitty.com/img/social-share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cassidylearns">
+    <meta name="twitter:creator" content="@cassidylearns">
+    <meta name="twitter:title" content="Pomodoro Kitty - A Cat Themed Pomodoro Timer">
+    <meta name="twitter:description" content="A cat themed pomodoro timer with multiple themes. Pomodoro is a time management method used to break work into manageable chunks of time.">
+    <meta name="twitter:image" content="https://pomodorokitty.com/img/pomodoro-twitter.jpg">
+    <meta name="theme-color" content="#f9f9f9">
+    <title>Pomodoro Kitty - A Cat Themed Pomodoro Timer</title>
+    <link rel="manifest" href="https://pomodorokitty.com/manifest.json">
+    <link rel="stylesheet" href="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/styles.min.css">
+    <link rel="preload" href="https://pomodorokitty.com/fonts/Raleway-Thin.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="apple-touch-icon" href="https://pomodorokitty.com/icons/apple-icon-180.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1290-2796.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2796-1290.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2556-1179.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://pomodorokitty.com/icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EXQR7BTXHQ");
+    </script>
+    <style>
+      @font-face {
+        font-family: "Raleway";
+        src: url("fonts/Raleway-Thin.woff2") format("woff2"),
+          url("fonts/Raleway-Thin.ttf") format("truetype");
+        font-weight: 100;
+        font-display: swap;
+      }
+    </style>
+    <script>
+      if ("fonts" in document) {
+        var extraLight = new FontFace(
+          "Raleway",
+          "url(fonts/Raleway-ExtraLight.woff2) format('woff2'), url(fonts/Raleway-ExtraLight.ttf) format('truetype')",
+          { weight: "200" }
+        );
+        var light = new FontFace(
+          "Raleway",
+          "url(fonts/Raleway-Light.woff2) format('woff2'), url(fonts/Raleway-Light.ttf) format('truetype')",
+          { weight: "300" }
+        );
+        var regular = new FontFace(
+          "Raleway",
+          "url(fonts/Raleway-Regular.woff2) format('woff2'), url(fonts/Raleway-Regular.ttf) format('truetype')",
+          { weight: "400" }
+        );
+
+        Promise.all([extraLight.load(), light.load(), regular.load()]).then(
+          function (fonts) {
+            fonts.forEach(function (font) {
+              document.fonts.add(font);
+            });
+          }
+        );
+      }
+    </script>
+  <style>
+  .custom-theme {
+  --h1-color: #191919;
+  --gradient-end: #191919;
+  --gradient-start: #191919;
+  --start-text: #004000;
+  --stop-text: #004000;
+  --stop-bg: #191919;
+  --start-bg: #191919;
+  --display-bg: #191919;
+  --display-text: #191919;
+  --menu-btn-text: #ffffff;
+  }
+  </style><style>
+  .custom-theme {
+  --h1-color: #191919;
+  --gradient-end: #191919;
+  --gradient-start: #191919;
+  --start-text: #004000;
+  --stop-text: #004000;
+  --stop-bg: #191919;
+  --start-bg: #191919;
+  --display-bg: #191919;
+  --display-text: #ffffff;
+  --menu-btn-text: #ffffff;
+  }
+  </style><style>
+  .custom-theme {
+  --h1-color: #191919;
+  --gradient-end: #191919;
+  --gradient-start: #191919;
+  --start-text: #073826;
+  --stop-text: #1e334d;
+  --stop-bg: #191919;
+  --start-bg: #191919;
+  --display-bg: #191919;
+  --display-text: #ffffff;
+  --menu-btn-text: #ffffff;
+  }
+  </style><style>
+  .custom-theme {
+  --h1-color: #191919;
+  --gradient-end: #191919;
+  --gradient-start: #191919;
+  --start-text: #96eded;
+  --stop-text: #0cd111;
+  --stop-bg: #191919;
+  --start-bg: #191919;
+  --display-bg: #191919;
+  --display-text: #ffffff;
+  --menu-btn-text: #ffffff;
+  }
+  </style></head>
+
+  <body class="custom-theme">
+    <main class="wrap">
+      <h1 style="display: none;">Pomodoro Kitty</h1>
+      <div class="time">
+        <div class="catPerch">
+          <div id="catContainer" class="grey-cat heterochromia-eyes-green">
+            <div class="cat">
+              <div class="head">
+                <div class="ears">
+                  <div class="ear-l">
+                    <div class="inner1"></div>
+                  </div>
+                  <div class="ear-r">
+                    <div class="inner2"></div>
+                  </div>
+                </div>
+                <div class="face">
+                  <div class="eyes large">
+                    <div class="eyecover"></div>
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                  </div>
+                  <div class="nose"></div>
+                </div>
+              </div>
+              <div class="body">
+                <div class="tail"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display-container">
+          <div class="display">
+            <div class="type"></div>
+            <div class="time">25:00</div>
+            <!-- initialise with a time to avoid FOIT -->
+          </div>
+          <div class="buttonRow">
+            <button class="startTimer">Start</button>
+            <button class="stopTimer">Stop</button>
+          </div>
+        </div>
+        <div class="taskContainer">
+          <div class="task">
+            <input type="text" id="pomodoro-clock-task" placeholder="What would you like to accomplish?" autocomplete="off" tabindex="0">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+    <!-- menu here -->
+    <div class="">
+      <nav class="menuButtons">
+        <!-- writing mode doesn't work on buttons in chrome so must use link instead -->
+        <button class="menu_btn options_btn"><span>Options</span></button>
+        <button class="menu_btn sessions_btn"><span>History</span></button>
+      </nav>
+      <div id="optionsMenu" class="closed">
+        <div class="menuWrap" style="display: block; visibility: hidden;">
+          <button class="closeMenuBtn" aria-label="Close menu">
+            <svg class="closeBtn" enable-background="new 0 0 512.001 512.001" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
+              <path class="closeMenuBtnPath" d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"></path>
+            </svg>
+          </button>
+          <h2>Options</h2>
+          <button class="requestPermissionsBtn">
+            Allow timer notifications
+          </button>
+          <button id="titleToggle">show title</button>
+          <h3>Set times</h3>
+          <p class="pale">
+            This will reset the clock if you have a timer in progress.
+          </p>
+          <form id="change-times">
+            <label for="work-time">Work time (in min):</label>
+            <input type="number" id="work-time" name="work-time" value="25" min="0" oninput="validity.valid||(value='');">
+
+            <label for="break-time">Break time (in min):</label>
+            <input type="number" id="break-time" name="break-time" value="5" min="0" oninput="validity.valid||(value='');">
+
+            <label for="long-break-time">Long break time (in min):</label>
+            <input type="number" id="long-break-time" name="long-break-time" value="15" min="0" oninput="validity.valid||(value='');">
+          </form>
+          <button type="submit" form="change-times" value="Submit">
+            Set times
+          </button>
+
+          <h3>Cat base colour</h3>
+          <div id="catBgContainer"><button class="colour" aria-label="Black cat, blue eyes" data-class="black-cat" style="background: #333">
+      </button><button class="colour active" aria-label="Grey cat, orange eyes" data-class="grey-cat" style="background: #4b5d67">
+      </button><button class="colour" aria-label="undefined" data-class="lightgrey-cat" style="background: #aeaaa7">
+      </button><button class="colour" aria-label="undefined" data-class="offwhite-grey-cat" style="background: #f5f5f5">
+      </button><button class="colour" aria-label="White cat, blue eyes" data-class="white-cat" style="background: #fffff2">
+      </button><button class="colour" aria-label="Cream cat" data-class="cream-cat" style="background: #FFF2CC">
+      </button><button class="colour" aria-label="undefined" data-class="ginger-cat-alternate" style="background: #eab06d">
+      </button><button class="colour" aria-label="undefined" data-class="ginger-cat" style="background: #f09d3f">
+      </button><button class="colour" aria-label="undefined" data-class="brown-cat" style="background: #8c664c">
+      </button><button class="colour" aria-label="undefined" data-class="chocolate-cat" style="background: #523535">
+      </button></div>
+          <h3>Cat eye colour</h3>
+          <div id="catEyeContainer"><button class="colour" aria-label="Green eyes" data-class="green-eyes" style="background: linear-gradient(90deg, #acd359, #acd359 50%,#acd359 50%)">
+      </button><button class="colour" aria-label="Greyish green eyes" data-class="grey-green-eyes" style="background: linear-gradient(90deg, #dbd0ae, #dbd0ae 50%,#dbd0ae 50%)">
+      </button><button class="colour" aria-label="Blue eyes" data-class="blue-eyes" style="background: linear-gradient(90deg, #95dee6, #95dee6 50%,#95dee6 50%)">
+      </button><button class="colour" aria-label="Washed out blue eyes" data-class="washedout-blue-eyes" style="background: linear-gradient(90deg, #b4d5d4, #b4d5d4 50%,#b4d5d4 50%)">
+      </button><button class="colour" aria-label="Yellow eyes" data-class="yellow-eyes" style="background: linear-gradient(90deg, #ffd249, #ffd249 50%,#ffd249 50%)">
+      </button><button class="colour" aria-label="Amber eyes" data-class="amber-eyes" style="background: linear-gradient(90deg, #FFBF00, #FFBF00 50%,#FFBF00 50%)">
+      </button><button class="colour" aria-label="Orange eyes" data-class="orange-eyes" style="background: linear-gradient(90deg, #f2a365, #f2a365 50%,#f2a365 50%)">
+      </button><button class="colour" aria-label="Heterochromia eyes yellow and blue" data-class="heterochromia-eyes-yellow" style="background: linear-gradient(90deg, #95dee6, #95dee6 50%,#ffd249 50%)">
+      </button><button class="colour" aria-label="Heterochromia eyes amber and blue" data-class="heterochromia-eyes-amber" style="background: linear-gradient(90deg, #95dee6, #95dee6 50%,#FFBF00 50%)">
+      </button><button class="colour active" aria-label="Heterochromia eyes green and blue" data-class="heterochromia-eyes-green" style="background: linear-gradient(90deg, #95dee6, #95dee6 50%,#acd359 50%)">
+      </button></div>
+          <h3>Background colour</h3>
+          <div id="colourContainer"><button class="colour" aria-label="Light Grey" data-class="light-grey" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #f8f9fa,
+      #ced4da 75%, #d9dee3 75%
+    );">
+    </button><button class="colour" aria-label="Nearly white" data-class="off-white" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #D7E1EC,
+      #FFFFFF 75%, #d7e1ec 75%
+    );">
+    </button><button class="colour" aria-label="Pink" data-class="default" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #ee9ca7,
+      #ffdde1 75%, #ffdde1 75%
+    );">
+    </button><button class="colour" aria-label="Pink orange" data-class="pink-orange" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #f9c1b1,
+      #fb8085 75%, #fb8085 75%
+    );">
+    </button><button class="colour" aria-label="Sunset" data-class="sunset" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #FFAAC9,
+      #FFF8C9 75%, #FFD372 75%
+    );">
+    </button><button class="colour" aria-label="Blush Dark" data-class="blush-dark" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #D14D72,
+      #D14D72 75%, #FCC8D1 75%
+    );">
+    </button><button class="colour" aria-label="Blush" data-class="blush" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #b5838d,
+      #ffb4a2 75%, #6d6875 75%
+    );">
+    </button><button class="colour" aria-label="Pale yellow" data-class="pale-yellow" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #f9d29d,
+      #ffd8cb 75%, #f8c98c 75%
+    );">
+    </button><button class="colour" aria-label="Light Yellow" data-class="light-yellow" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #FFF2CC,
+      #FFF2CC 75%, #ffbf00 75%
+    );">
+    </button><button class="colour" aria-label="Earthy Orange" data-class="earthy-orange" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #fcb97d,
+      #fcb97d 75%, #aaba93 75%
+    );">
+    </button><button class="colour" aria-label="Earthy" data-class="earthy" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #cb997e,
+      #cb997e 75%, #b7b7a4 75%
+    );">
+    </button><button class="colour" aria-label="Mocha" data-class="mocha" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #867070,
+      #D5B4B4 75%, #D5B4B4 75%
+    );">
+    </button><button class="colour" aria-label="Earthy Red" data-class="earthy-red" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #d66853,
+      #d66853 75%, #364156 75%
+    );">
+    </button><button class="colour" aria-label="Bright Red" data-class="bright-red" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #85182a,
+      #da1e37 75%, #ffffff 75%
+    );">
+    </button><button class="colour" aria-label="Red and Brown" data-class="reddy-brown" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #3a001e,
+      #3a001e 75%, #ff8066 75%
+    );">
+    </button><button class="colour" aria-label="Sunset Orange" data-class="sunset-orange" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #e85d04,
+      #faa307 75%, #eee2de 75%
+    );">
+    </button><button class="colour" aria-label="Blue Yellow" data-class="blue-yellow" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #fdc921,
+      #fdc921 75%, #6798c0 75%
+    );">
+    </button><button class="colour" aria-label="Blue" data-class="blue" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #caf0f8,
+      #00b4d8 75%, #00b4d8 75%
+    );">
+    </button><button class="colour" aria-label="Light Blue" data-class="light-blue" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #63aca4,
+      #edf6f9 75%, #edf6f9 75%
+    );">
+    </button><button class="colour" aria-label="Forest Green" data-class="forest-green" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #5F7161,
+      #6D8B74 75%, #EFEAD8 75%
+    );">
+    </button><button class="colour" aria-label="Green" data-class="green" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #d8d8ac,
+      #c8c85e 75%, #c8c85e 75%
+    );">
+    </button><button class="colour" aria-label="Spring Green" data-class="spring-green" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #A7E08E,
+      #A7E08E 75%, #508D69 75%
+    );">
+    </button><button class="colour" aria-label="Calm Purple" data-class="calm-purple" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #e5e6ff,
+      #B1B2FF 75%, #B1B2FF 75%
+    );">
+    </button><button class="colour" aria-label="Purple" data-class="purple" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #9ab5e1,
+      #f39fdc 75%, #f39fdc 75%
+    );">
+    </button><button class="colour" aria-label="Light Purple" data-class="light-purple" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #947EC3,
+      #947EC3 75%, #EEF3D2 75%
+    );">
+    </button><button class="colour" aria-label="Moon Purple" data-class="moon-purple" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #4e54c8,
+      #8f94fb 75%, #8f94fb 75%
+    );">
+    </button><button class="colour" aria-label="Bright Purple" data-class="bright-purple" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #8900f2,
+      #e500a4 75%, #8a00f1 75%
+    );">
+    </button><button class="colour" aria-label="Halloween gradient" data-class="halloween-gradient" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #3C096C,
+      #9D4EDD 75%, #FF9100 75%
+    );">
+    </button><button class="colour" aria-label="Ace Flag" data-class="ace-flag" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #800080,
+      #800080 75%, #a3a3a3 75%
+    );">
+    </button><button class="colour" aria-label="Twitter dim" data-class="twitter-dark" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #15202b,
+      #15202b 75%, #15202b 75%
+    );">
+    </button><button class="colour" aria-label="All Grey" data-class="all-grey" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #232323,
+      #232323 75%, #232323 75%
+    );">
+    </button><button class="colour" aria-label="Green Purple" data-class="green-purple" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #0b525b,
+      #4d194d 75%, #4d194d 75%
+    );">
+    </button><button class="colour" aria-label="Dark blue" data-class="dark-blue" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #000000,
+      #14213d 75%, #fca311 75%
+    );">
+    </button><button class="colour" aria-label="Stormy Night" data-class="stormy-night" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #191825,
+      #413543 75%, #F0EB8D 75%
+    );">
+    </button><button class="colour" aria-label="Cyan Dark" data-class="cyan-dark" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #222831,
+      #31363F 75%, #64CCC5 75%
+    );">
+    </button><button class="colour" aria-label="Custom Theme" data-class="custom-theme" data-eye-fallback="undefined" style="background:  linear-gradient(
+      53deg,
+      #191919,
+      #191919 75%, undefined 75%
+    );">
+    </button></div>
+          <h3>Create a custom theme</h3>
+          <div class="custom-theme-options">
+            <form id="custom-colors">
+              <fieldset>
+                <input type="color" id="title-color" name="title-color" value="#191919">
+                <label for="title-color">Title</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="start-color" name="start-color" value="#191919">
+                <label for="start-color">Background gradient start</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="end-color" name="end-color" value="#191919">
+                <label for="end-color">Background gradient end</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="text-color" name="text-color" value="#ffffff">
+                <label for="text-color">Timer text</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="timer-bg-color" name="timer-bg-color" value="#191919">
+                <label for="timer-bg-color">Timer background</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="start-button-bg" name="start-button-bg" value="#191919">
+                <label for="timer-bg-color">Start background</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="start-button-text" name="start-button-text" value="#96eded">
+                <label for="timer-bg-color">Start text</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="stop-button-bg" name="stop-button-bg" value="#191919">
+                <label for="timer-bg-color">Stop background</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="stop-button-text" name="stop-button-text" value="#0cd111">
+                <label for="timer-bg-color">Stop text</label>
+              </fieldset>
+              <fieldset>
+                <input type="color" id="menu-button-text" name="menu-button-text" value="#ffffff">
+                <label for="menu-button-text">Menu button text</label>
+              </fieldset>
+              <button form="custom-colors" type="submit">Set colours</button>
+            </form>
+          </div>
+        </div>
+        <footer class="credit" style="display: block; visibility: hidden;">
+          Created by
+          <a href="https://twitter.com/cassidylearns" target="_blank">@cassidylearns</a>
+          |
+          <div class="kofi-btn-container">
+            <a title="Support me on ko-fi.com" class="kofi-button" style="background-color: #794bc4" href="https://ko-fi.com/F1F3DGSTJ" target="_blank">
+              <span class="kofitext"><img src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/kofi-cup.png" alt="Ko-fi donations" class="kofiimg">Support Me on Ko-fi</span></a>
+          </div>
+        </footer>
+      </div>
+      <div id="sessionsMenu" class="closed">
+        <div class="menuWrap" style="display: none; visibility: hidden">
+          <button class="closeMenuBtn" aria-label="Close menu">
+            <svg class="closeBtn" enable-background="new 0 0 512.001 512.001" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
+              <path class="closeMenuBtnPath" d="m284.286 256.002 221.857-221.858c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.858 221.858-221.857-221.858c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.857 221.857-221.857 221.858c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.856-221.857 221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285z"></path>
+            </svg>
+          </button>
+
+          <h2>Your History</h2>
+          <h3>Lifetime Stats</h3>
+          <div id="pomodorosCompleted">
+            You've completed <span class="timeCompleted">0 min</span> worth of
+            work.
+          </div>
+          <h3>Today's History</h3>
+          <ul id="sessions"></ul>
+        </div>
+        <footer class="credit">
+          Created by
+          <a href="https://twitter.com/cassidylearns" target="_blank">@cassidylearns</a>
+          |
+          <div class="kofi-btn-container">
+            <a title="Support me on ko-fi.com" class="kofi-button" style="background-color: #794bc4" href="https://ko-fi.com/F1F3DGSTJ" target="_blank">
+              <span class="kofitext"><img src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/cup-border.webp" alt="Ko-fi donations" class="kofiimg">Support Me on Ko-fi</span></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="Pomodoro%20Kitty%20-%20A%20Cat%20Themed%20Pomodoro%20Timer_files/script.js"></script>
+  
+
+</body></html>
